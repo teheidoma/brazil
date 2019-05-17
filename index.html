@@ -7,21 +7,86 @@
     <link rel="stylesheet" href="vendors/jquery.pagepiling.css"/>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="vendors/jquery.pagepiling.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="style/style.css">
+    <script src="vendors/jquery.pagepiling.min.js"></script>
 
 </head>
 <body>
 <div id="pagepiling">
     <div class="section" id="section1">
-        <h1>БРАЗИЛИЯ</h1>
-        <p>БЮДЖЕТ: 13 000$</p>
-        <p>
-            Перелёт(в обе стороны):
-            Кропивницкий - Киев(400 хривен)
-            Киев - Милан (121 евриков)
-            Милан - Сан - Пауло (360 евриков)
-        </p>
+        <div id="sc1c" class="container-fluid">
+            <div class="row">
+                <div class="col-md">
+
+                    <h1>БРАЗИЛИЯ</h1>
+                    <p>БЮДЖЕТ: 13 000$</p>
+                    <p>
+                        Перелёт(в обе стороны): <br>
+                        Кропивницкий - Киев(400 хривен)<br>
+                        Киев - Милан (121 евриков)<br>
+                        Милан - Сан - Пауло (360 евриков)<br>
+                    </p>
+                </div>
+                <div class="col-md">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31811170.61854302!2d-64.3251828024439!3d-13.275467662105092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2z0JHRgNCw0LfQuNC70LjRjw!5e0!3m2!1sru!2sua!4v1558078468362!5m2!1sru!2sua"
+                            width="600" height="200" frameborder="0" style="border:0; border-radius: 20px" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row" style="background-color: #00b248;">
+                <div class="col-md text-center">
+
+                    <h2>Рио - де - Жанейро</h2>
+                    <img src="img/rio1.jpg" alt="">
+
+                </div>
+                <div class="col-md text-center">
+                    <h2>Сан - Паулу</h2>
+                    <img src="img/sp1.jpg" alt="">
+
+                </div>
+                <div class="col-md text-center">
+                    <h2>Ору - Прету</h2>
+                    <img src="img/preto1.jpg" alt="">
+                </div>
+            </div>
+            <div class="row" style="background-color: #66ffa5;">
+                <div class="col-md text-center">
+                    <p>
+                        Сегодня Рио — второй по величине город Бразилии с захватывающими дух пейзажами, развитой пляжной
+                        культурой и, конечно, знаменитым ежегодным карнавалом. Уникальная «рекоподобная» гавань Рио
+                        известна горой Сахарная голова и пиком Коковардо, а также холмами Тижука. Все это делает ее
+                        одним из природных чудес света.
+                    </p>
+                    <div class="btn btn-success btn-block">Перейти</div>
+                </div>
+                <div class="col-md text-center">
+                    <h2>Сан - Паулу</h2>
+                    <img src="img/sp1.jpg" alt="">
+
+                </div>
+                <div class="col-md text-center">
+                    <h2>Ору - Прету</h2>
+                    <img src="img/preto1.jpg" alt="">
+                </div>
+            </div>
+            <div class="row" style="background-color: #00b248;">
+
+            </div>
+        </div>
     </div>
     <div class="section" id="section2">
         <div class="intro">
@@ -42,11 +107,11 @@
     <li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
 </ul>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#pagepiling').pagepiling({
             menu: '#menu',
             anchors: ['page1', 'page2', 'page3'],
-            sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
+            sectionsColor: ['#00e676', '#2ebe21', '#2C3E50', '#51bec4'],
             loopTop: true,
             loopBottom: true,
             animateAnchor: true,

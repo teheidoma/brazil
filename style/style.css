@@ -30,3 +30,13 @@
 #section1 {
 
 }
+#section1 img{
+    width: 250px;
+    height: 150px;
+}
+/*#section1 .container-fluid{*/
+/*    background-color: #00b248;*/
+/*}*/
+#section1 .row {
+    padding: 10px;
+}
